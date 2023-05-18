@@ -1,0 +1,61 @@
+<!-- Password Valisation Assignment -->
+
+<!-- Responsive  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Password validation</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Choose new password</h2>
+        <p>Almost done. Enter your new password and youre all set.</p>      
+        <form>
+            <label>Create a password</label> <br>
+            <input type="password" id="password" placeholder="Enter new password" onInput="check()">
+            <i class="fa fa-eye-slash" id="eye" aria-hidden="true" onclick="eye()"></i>
+            <br>
+            <label>Confirm new password</label> <br>
+            <input type="password" id="password2" placeholder="Confirm new password">
+            <i class="fa fa-eye-slash" id="eye2" aria-hidden="true" onclick="eye2()"></i>
+        </form>
+
+        <div class="checklist">
+            <div id="check0">
+                <i class="fa-solid fa-circle-check"></i> <span>one lowercase character</span>
+            </div>
+            <div id="check1">
+                <i class="fa-solid fa-circle-check"></i> <span>one special character</span>
+            </div>
+            <div id="check2">
+                <i class="fa-solid fa-circle-check"></i> <span>one uppercase character</span>
+            </div>
+            <div id="check3">
+                <i class="fa-solid fa-circle-check"></i> <span>8 character minimum</span>
+            </div>
+            <div id="check4">
+                <i class="fa-solid fa-circle-check"></i> <span>one number</span>
+            </div>
+        </div>
+        <div>
+            <button class="bttn" onclick="btn()">Reset password</button>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
